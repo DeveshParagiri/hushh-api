@@ -7,6 +7,7 @@ from authcheck import auth_check
 import base64
 import json
 
+
 creds_base64 = os.environ.get("GOOGLE_CREDENTIALS_BASE64")
 creds_json_str = base64.b64decode(creds_base64).decode("utf-8")
 creds_info = json.loads(creds_json_str)
